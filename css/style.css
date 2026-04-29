@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+
+.NavBar{
+    display: flex;
+    background-color: #1e293b;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.Logo h2{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+.Account, .Wishlist{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Account:hover, .Wishlist:hover{
+    color: #d7d7d7;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-panel{
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 30px 0;
+    height: fit-content;
+}
+
+.products-menu{
+    width: 72%;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 25px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    width: 15%;
+    padding: 20px 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item:hover{
+    transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.item h2{
+    margin: 10px 0;
+    font-size: 1.125rem;
+}
+
+.item p{
+    font-size: 0.875rem;
+    color: gray;
+}
+
+.more-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.more-info .pPrice{
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.fa-bag-shopping{
+    background: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.more-info .fa-bag-shopping:hover {
+    background: darkorange;
+}
+
+.item img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.search input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+
+.search{
+    text-align: center;
+}
+
+.price-filter select{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+
+.price-filter{
+    text-align: center;
+}
+
+.side-panel hr{
+    width: 90%;
+}

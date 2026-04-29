@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .side-panel{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .products-menu{
+        width: 90%;
+        margin: auto;
+    }
+
+    .item{
+        width: 80%;
+    }
+
+    .item img{
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .products{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px 0;
+    }
+}

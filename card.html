@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/styleOfCard.css" />
+</head>
+
+<body>
+  <div class="NavBar">
+    <a class="Logo" href="./index.html">
+      <h2>Phone Store</h2>
+    </a>
+    <div>
+      <a class="Wishlist" href="./wishlist.html"><i class="fa-solid fa-heart"></i></a>
+      <a class="Account" href="./card.html"><i class="fa-solid fa-circle-user"></i></a>
+    </div>
+  </div>
+  <article class="card" id="profile-card">
+    <div class="card-image-wrapper">
+      <img src="./images/profile.jpg" alt="Hossam Hassan - Profile" class="card-img" />
+    </div>
+    <header class="card-content">
+      <h2 class="card-name">Client Name</h2>
+      <p class="card-title">Summary Card</p>
+      <p class="card-bio">
+        🛒 Orders: 12 <br> 💰 Total: 5,400 EGP <br> 🕒 Last Order: 20 Feb 2026 <br>
+        🚚 Status: Delivered
+      </p>
+    </header>
+
+    <section class="card-socials">
+      <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </section>
+
+    <section class="card-actions">
+      <button type="button" class="btn-theme" id="btn-theme-toggle">
+        <span class="btn-text">Change Theme</span>
+        <span class="btn-icon">🎨</span>
+      </button>
+    </section>
+  </article>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

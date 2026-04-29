@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+.NavBar{
+    display: flex;
+    background-color: #1e293b;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Logo{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.Account, .Wishlist{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Account:hover, .Wishlist:hover{
+    color: #d7d7d7;
+}
+
+.card {
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --bg-btn: #f1f5f9;
+  --text-btn: #1e293b;
+  --hover-btn: #e2e8f0;
+  --accent-color: palevioletred;
+  --shadow-color: rgba(155, 49, 150, 0.15);
+  --social-hover: palevioletred;
+}
+
+
+.card.dark-mode {
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --bg-btn: #334155;
+  --text-btn: #f8fafc;
+  --hover-btn: #475569;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --social-hover: #f472b6;
+}
+
+.card {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px -10px var(--shadow-color);
+  padding: 35px 25px;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, palevioletred, #f472b6);
+  box-shadow: 0 10px 20px -5px rgba(219, 112, 147, 0.4);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--bg-card);
+  background-color: var(--bg-card); /* Fallback to prevent transparency flashes */
+  transition: border-color 0.4s;
+}
+
+.card-content {
+  width: 100%;
+}
+
+.card-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-main);
+  transition: color 0.4s;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.card-bio {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  transition: color 0.4s;
+}
+
+.card-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--bg-btn);
+  color: var(--text-main);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--social-hover);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-actions {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--bg-btn);
+  color: var(--text-btn);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+  background-color: var(--hover-btn);
+  transform: scale(1.03);
+}
+
+.btn-theme:active {
+  transform: scale(0.97);
+}

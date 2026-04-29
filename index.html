@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="NavBar">
+        <a class="Logo" href="./index.html"><h2>Phone Store</h2></a>
+        <div>
+            <a class="Wishlist" href="./wishlist.html"><i class="fa-solid fa-heart"></i></a>
+            <a class="Account" href="./card.html"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side-panel">
+            <div class="search">
+                <input type="search" name="" id="searchid" placeholder="Search By Name....." oninput="searchProduct()">
+            </div>
+            <hr>
+            <div class="price-filter">
+                <select name="price" id="price-filter" onchange="priceFilter()">
+                    <option value="All">All</option>
+                    <option value="5,000 - 10,000">5,000 EGP - 10,000 EGP</option>
+                    <option value="10,000 - 20,000">10,000 EGP - 20,000 EGP</option>
+                    <option value="20,000 - 40,000">20,000 EGP - 40,000 EGP</option>
+                    <option value="40,000 - 60,000">40,000 EGP - 60,000 EGP</option>
+                    <option value="60,000 - 80,000">60,000 EGP - 80,000 EGP</option>
+                    <option value="80,000 - 100,000">80,000 EGP - 100,000 EGP</option>
+                </select>
+            </div>
+        </div>
+        <div class="products-menu">
+            <div id="products-data" class="products"></div>
+        </div>
+
+    </div>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
